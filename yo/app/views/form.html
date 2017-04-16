@@ -1,0 +1,69 @@
+<div class="container">
+
+  <form class="well form-horizontal" action="rest/mail/add" method="post" id="contact_form" onsubmit="return checkContactForm(this)">
+    <fieldset>
+
+      <legend>Nouveau membre !</legend>
+
+      <div class="form-group">
+        <label class="col-md-4 control-label">Nom</label>
+        <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input name="name" placeholder="Nom" class="form-control" type="text" onblur="check(this)">
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-md-4 control-label">Prénom</label>
+        <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input name="fName" placeholder="Prénom" class="form-control" type="text" onblur="check(this)">
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4 control-label">Sexe</label>
+        <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <select class="form-control" name="sex" id="sex">
+						    <option value="M">Homme</option>
+						    <option value="F">Femme</option>		   
+						  </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-md-4 control-label">E-Mail</label>
+        <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+            <input name="mail" placeholder="E-Mail" class="form-control" type="text" onblur="check(this)">
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-md-4 control-label">Facebook</label>
+        <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon icon-facebook"></i></span>
+            <input name="facebook" placeholder="Profil facebook" class="form-control" type="text" onblur="check(this)">
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-md-4 control-label"></label>
+        <div class="col-md-4">
+          <button type="submit" class="btn btn-warning">Valider <span class="glyphicon glyphicon-send"></span></button>
+        </div>
+      </div>
+
+    </fieldset>
+  </form>
+</div>

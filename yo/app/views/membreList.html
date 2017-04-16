@@ -1,0 +1,14 @@
+<div class="jumbotron">
+  <h1>Liste des membres </h1>
+  <p class="lead">
+    <div ng-repeat="c in lsChamps | orderBy:'name'">
+      <b>{{c.name}}</b> :
+      {{c.fName}}
+      <br>
+      {{c.sexe}}
+      <br> 
+      {{c.email}}<br> 
+      {{c.facebook}}<br>
+    </div>
+  </p>
+</div>
