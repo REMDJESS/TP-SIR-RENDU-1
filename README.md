@@ -31,9 +31,6 @@ URL: `jdbc:hsqldb:hsql://localhost/`
 `mvn tomcat7:run`
 Lancez http://localhost:8080/index.html pour consulter la page 
 
-##### Diagramme de classes
-
-
 
 # PARTIE II : Front-End
 ## Objectif
